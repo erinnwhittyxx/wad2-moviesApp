@@ -21,6 +21,11 @@ const App = () => {
             </Link>
           </li>
           <li className="nav-item">
+            <Link className="nav-link " to="/movies/upcoming">
+              Upcoming
+            </Link>
+          </li>
+          <li className="nav-item">
             <Link className="nav-link " to="/movies/favorites">
               Favorites
             </Link>
