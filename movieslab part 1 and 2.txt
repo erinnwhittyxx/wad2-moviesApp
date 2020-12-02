@@ -1,0 +1,71 @@
+commit 1c85bf917dbcfffcb3c56124810a3fda3fae1c53
+Author: erinnwhittyxx <erinnwhittyxx@gmail.com>
+Date:   Wed Oct 28 11:54:05 2020 +0000
+
+    Refactor: Template list page; HTTP API calls centralized
+
+commit 2fe9f65e790f5544a553684c673065745765e9d9
+Author: erinnwhittyxx <erinnwhittyxx@gmail.com>
+Date:   Wed Oct 28 11:49:05 2020 +0000
+
+    Add to favorites logic completed; Dummy favorites page.
+
+commit f107dd39d6953ee192e5817be309770ec926483c
+Author: erinnwhittyxx <erinnwhittyxx@gmail.com>
+Date:   Wed Oct 28 11:36:25 2020 +0000
+
+    Added filtering of movie list
+
+commit 179187e57dfa6934530a07eceae9bc22bd4b8e71
+Author: erinnwhittyxx <erinnwhittyxx@gmail.com>
+Date:   Wed Oct 28 11:31:14 2020 +0000
+
+    Added routing and live data from API
+
+commit 0ae6d588bb95d1c2193abaedde44a8372a3649ad
+Author: erinnwhittyxx <erinnwhittyxx@gmail.com>
+Date:   Wed Oct 21 11:41:27 2020 +0100
+
+    Movie Details Page - included production countries
+
+commit d8d4cc781f7b7587fd7e663d122fba9997d1ca5d
+Author: erinnwhittyxx <erinnwhittyxx@gmail.com>
+Date:   Wed Oct 21 11:33:00 2020 +0100
+
+    Movie Details Page rendering
+
+commit 6ed95a99e27ccaf98315ddff737bff124967d8c2
+Author: erinnwhittyxx <erinnwhittyxx@gmail.com>
+Date:   Wed Oct 21 11:29:50 2020 +0100
+
+    Movie Details  page components
+
+commit a7c306751a20b98f0fff819b468650a6927701f5
+Author: erinnwhittyxx <erinnwhittyxx@gmail.com>
+Date:   Wed Oct 21 11:05:30 2020 +0100
+
+    Movie Details  page components
+
+commit e8b7a748a8c408982ad4cb1f8e91b1eb97928ca5
+Author: erinnwhittyxx <erinnwhittyxx@gmail.com>
+Date:   Wed Oct 21 11:01:36 2020 +0100
+
+    Home Page rendering
+
+commit 3faf724561cf60e405ed60b989b4ebaf5c70b63b
+Author: erinnwhittyxx <erinnwhittyxx@gmail.com>
+Date:   Wed Oct 21 10:54:38 2020 +0100
+
+    Home page components
+
+commit e7da18b28e98d21d48227e83cece5fe487a593ff
+Author: Diarmuid O Connor <doconnor@wit.ie>
+Date:   Tue Oct 13 15:10:37 2020 +0100
+
+    update core dependencies
+
+commit 67edbc1dcb817206145f6929eb34f15eb605f3c2
+Author: Diarmuid O Connor <doconnor@wit.ie>
+Date:   Sun Jun 7 12:57:25 2020 +0100
+
+    Initial structure
