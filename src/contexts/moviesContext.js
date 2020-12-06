@@ -13,13 +13,13 @@ const reducer = (state, action) => {
       };
     case "load":
       return { movies: action.payload.movies };
-    case "add-review":
+      case "add-review":
         return {
-            movies: state.movies.map((m) =>
-              m.id === action.payload.movie.id
-                ? { ...m, review: action.payload.review }
-                : m
-            ),
+          movies: state.movies.map((m) =>
+            m.id === action.payload.movie.id
+              ? { ...m, review: action.payload.review }
+              : m
+          ),
         };
     default:
       return state;
@@ -37,11 +37,11 @@ const MoviesContextProvider = (props) => {
   const addReview = (movie, review) => {
     dispatch({ type: "add-review", payload: { movie, review } });
   };
+
   useEffect(() => {
     getMovies().then((movies) => {
       dispatch({ type: "load", payload: { movies } });
     });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

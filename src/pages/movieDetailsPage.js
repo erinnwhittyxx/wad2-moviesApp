@@ -3,6 +3,7 @@ import { Link, Route, withRouter } from "react-router-dom";
 import MovieDetails from "../components/movieDetails";
 import PageTemplate from "../components/templateMoviePage";
 import MovieReviews from "../components/movieReviews";
+import reviewForm from "../components/reviewForm";
 import useMovie from "../hooks/useMovie";
 
 const MoviePage = props => {

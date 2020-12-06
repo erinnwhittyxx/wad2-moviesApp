@@ -7,7 +7,6 @@ import MoviesHeader from "../src/components/headerMovieList";
 import MovieList from "../src/components/movieList";
 import MovieDetails from "../src/components/movieDetails";
 import MovieHeader from "../src/components/headerMovie";
-import AddFavoriteButton from "../src/components/buttons/addToFavorites";
 import { MemoryRouter } from "react-router";
 import GenresContextProvider from "../src/contexts/genresContext";
 import { action } from "@storybook/addon-actions";
@@ -40,6 +39,34 @@ const sample = {
       name: "Action"
     }
   ],
+  credits: [
+    {
+      credit_type: "cast",
+      department: "Actors",
+      job: "Actor",
+      media: {
+        id: 1396,
+        name: "English Breaking Bad",
+        original_name: "Breaking Bad",
+        character: "Walter White",
+        episodes: [],
+        seasons: [
+          {
+            air_date: "2012-07-15",
+            poster_path: "/elHbM2Ke72euRDXofdewP9GY5Y8.jpg",
+            season_number: 5
+          }
+        ]
+      },
+      media_type: "tv",
+      id: "52542282760ee313280017f9",
+      person: {
+        name: "Bryan Cranston",
+        id: 17419
+      }
+    } 
+  ],
+
   homepage:
     "https://www.starwars.com/films/star-wars-episode-viii-the-last-jedi",
   id: 181808,

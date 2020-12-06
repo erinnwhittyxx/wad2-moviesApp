@@ -31,6 +31,7 @@ export default ({ movie }) => {
           </li>
         ))}
       </ul>
+
       <ul className="list-group list-group-horizontal">
         <li key="slh" className="list-group-item list-group-item-dark">
           Spoken Languages
@@ -41,6 +42,7 @@ export default ({ movie }) => {
           </li>
         ))}
       </ul>
+
       <ul className="list-group list-group-horizontal">
         <li key="pch" className="list-group-item list-group-item-dark">
           Production Companies
@@ -64,3 +66,4 @@ export default ({ movie }) => {
     </>
   );
 };
+
