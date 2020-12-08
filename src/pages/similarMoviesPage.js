@@ -1,25 +1,25 @@
 import React, { useState, useEffect } from "react";
 import PageTemplate from '../components/templateMovieListPage'
-import {getTopRated} from "../api/tmdb-api";
-import ViewSimilarMovies from '../components/buttons/viewSimilar';
+import {getSimilarMovies} from "../api/tmdb-api";
+import AddToWatchListButton from '../components/buttons/addToWatchList'
 
-const TopRatedMoviesPage = () => {
+const SimilarMoviesPage = () => {
     const [movies, setMovies] = useState([]);
     useEffect(() => {
-        getTopRated().then(movies => {
+        getSimilarMovies().then(movies => {
         setMovies(movies);
         });
     }, []);
 
   return (
     <PageTemplate
-      title="Top Rated Movies"
+      title="Now Playing"
       movies={movies}
       action={(movie) => {
-        return <ViewSimilarMovies movie={movie} />;
+        return <AddToWatchListButton movie={movie} />;
       }}
     />
   );
 };
 
-export default TopRatedMoviesPage;
+export default SimilarMoviesPage;
