@@ -53,6 +53,7 @@ export default ({ movie }) => {
           </li>
         ))}
       </ul>
+
       <ul className="list-group list-group-horizontal">
         <li key="pcth" className="list-group-item list-group-item-dark">
           Production Countries
@@ -62,6 +63,15 @@ export default ({ movie }) => {
             {pct.name}
           </li>
         ))}
+      </ul>
+
+      <ul className="list-group list-group-horizontal">
+        <li key="pop" className="list-group-item list-group-item-dark">
+          Rating
+        </li>
+        <li key="rdv" className="list-group-item ">
+          {movie.vote_average}
+        </li>
       </ul>
     </>
   );
