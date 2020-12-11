@@ -10,6 +10,7 @@ import MovieHeader from "../src/components/headerMovie";
 import { MemoryRouter } from "react-router";
 import GenresContextProvider from "../src/contexts/genresContext";
 import { action } from "@storybook/addon-actions";
+import MovieCredits from "../src/components/movieCredits"
 
 const sample = {
   adult: false,
@@ -179,3 +180,7 @@ storiesOf("Movie Details Page/MovieHeader", module)
     <MemoryRouter initialEntries={["/"]}>{story()}</MemoryRouter>
   ))
   .add("default", () => <MovieHeader movie={sample} />);
+
+storiesOf("Movie Details Page/MovieCredits", module).add("default", () => (
+  <MovieCredits movie={sample} />
+  ));

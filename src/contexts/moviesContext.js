@@ -22,13 +22,12 @@ const reducer = (state, action) => {
         ),
       };
       case "view-similar":
-      return {
-        movies: state.movies.map((m) =>
-          m.id === action.payload.movie.id
-            ? { ...m, review: action.payload.review }
-            : m
-        ),
-      };
+        return {
+          movies: state.movies.map((m) =>
+            m.id === action.payload.movie.id
+              ? { ...m, review: action.payload.review }: m
+          ),
+        };
     default:
       return state;
   }
