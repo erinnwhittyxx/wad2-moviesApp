@@ -13,6 +13,7 @@ import GenresContextProvider from "./contexts/genresContext";
 import AddMovieReviewPage from './pages/addMovieReviewPage'
 import nowPlayingPage from "./pages/nowPlayingPage";
 import topRatedPage from "./pages/topRatedPage";
+import WatchlistPage from "./pages/watchlistPage";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <MoviesContextProvider>
           <GenresContextProvider> 
             <Switch>
+              <Route exact path="/movies/watchlist" component={WatchlistPage} />
               <Route exact path="/movies/top_rated" component={topRatedPage} />
               <Route exact path="/movies/now_playing" component={nowPlayingPage} />
               <Route exact path="/reviews/form" component={AddMovieReviewPage} />

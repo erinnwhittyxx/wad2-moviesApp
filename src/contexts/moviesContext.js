@@ -1,5 +1,6 @@
 import React, { useEffect, createContext, useReducer } from "react";
 import { getMovies } from "../api/tmdb-api";
+// import { getUpcomingMovies} from "../api/tmdb-api";
 
 export const MoviesContext = createContext(null);
 
@@ -13,6 +14,16 @@ const reducer = (state, action) => {
       };
     case "load":
       return { movies: action.payload.movies };
+
+    // case "add-towatchlist":
+    //   return {
+    //     movies: state.movies.map((m) =>
+    //       m.id === action.payload.movie.id ? { ...m, favorite: true } : m
+    //     ),
+    //   };
+    // case "load-watchlist":
+    //   return { movies: action.payload.movies };
+
     case "add-review":
       return {
         movies: state.movies.map((m) =>
@@ -42,20 +53,31 @@ const MoviesContextProvider = (props) => {
     dispatch({ type: "add-favorite", payload: { movie: state.movies[index] } });
   };
 
+  // const addToWatchList = (movieId) => {
+  //   const index = state.movies.map((m) => m.id).indexOf(movieId);
+  //   dispatch({ type: "add-towatchlist", payload: { movie: state.movies[index] } });
+  // };
+
   const addReview = (movie, review) => {
     dispatch({ type: "add-review", payload: { movie, review } });
   };
 
-  const viewSimilar = (movieId) => {
-    const index = state.movies.map((m) => m.id).indexOf(movieId);
-    dispatch({ type: "view-similar", payload: { movie: state.movies[index] } });
-  };
+  // const viewSimilar = (movieId) => {
+  //   const index = state.movies.map((m) => m.id).indexOf(movieId);
+  //   dispatch({ type: "view-similar", payload: { movie: state.movies[index] } });
+  // };
 
   useEffect(() => {
     getMovies().then((movies) => {
       dispatch({ type: "load", payload: { movies } });
     });
   }, []);
+
+  // useEffect(() => {
+  //   getUpcomingMovies().then((movies) => {
+  //     dispatch({ type: "load-watchlist", payload: { movies } });
+  //   });
+  // }, []);
 
   return (
     <MoviesContext.Provider
@@ -64,7 +86,8 @@ const MoviesContextProvider = (props) => {
         favorites: state.favorites,
         addToFavorites: addToFavorites,
         addReview: addReview,
-        viewSimilar: viewSimilar,
+        // viewSimilar: viewSimilar,
+        // addToWatchList: addToWatchList
       }}
     >
       {props.children}
