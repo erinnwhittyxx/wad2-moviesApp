@@ -4,12 +4,14 @@ Name: Erinn Whitty
 
 ## Features.
  
+ + Upcoming Movies page - a page to show upcoming movies.
  + Top Rated page - a new page to show the movies with the highest ratings
  + Now Playing page - a page to show movies that are currently playing/popular
  + Ratings = added rating to the movie details 
  + Credits = allows the user to view credits(cast) under each movie
  + Attempted Watchlist page/button = wanted to allow user to add movies to a watchlist and view it on a new page
  + Attempted Similar Movies page/button = when the user clicked on the button I wanted them to be redirected to a page full of similar movies
+ + Added MovieCredits to the Storybook UI.
 
 ## Setup requirements (If required).
 
@@ -17,6 +19,7 @@ N/A
 
 ## API Data Model.
 
++ https://api.themoviedb.org/3/movie/upcoming - get upcoming movies.
 + https://api.themoviedb.org/3/movie/now_playing - get movies that are now playing. 
 + https://api.themoviedb.org/3/movie/top_rated - get movies that have the highest rating.
 + https://api.themoviedb.org/3/movie/${id}/credits - get movie credits.
@@ -27,7 +30,7 @@ N/A
 
 ### Component catalogue (If required).
 
-....... Insert a screenshot from the Storybook UI, hi-light stories relating to new/modified components you developed - see example screenshot below] .......
+
 
 ![][stories]
 
