@@ -27,31 +27,31 @@ N/A
 
 ### Component catalogue (If required).
 
-....... Insert a screenshot from the Storybook UI, hi-light stories relating to new/modified components you developed - see example screenshot below] .......
-
 ![][stories]
 
 ### UI Design.
 
 ...... Insert screenshots of the new/modified views you have added to the Movies Fan app. Include a caption for each one clearly stating its purpose and any user interaction it supports ........
 
-![][movieDetail]
->Shows detailed information on a movie. Clicking the 'Show Reviews' button will display extracts from critic reviews.
+![][upcoming]
+>Shows pages of upcoming movies.
 
-![][review]
->Shows the full text for a movie review. 
+![][toprated]
+>Shows pages of movies with the highest ratings.
+
+![][nowplaying]
+>Shows pages of now playing/popular movies
+
+![][watchlist]
+>Page of movies added to the watchlist *incomplete*  
 
 ## Routing.
 
-...... Insert a list of the additional routes supported by your Movies Fan app. If relevant, specify which of the routes require authentication, i.e. protected/private.
-
 + /movies/now_playing - displays now playing movies.
-+ /movies/top_rated - displays
-+ /movies/watchlist - 
++ /movies/top_rated - displays movies with highest ratings 
++ /movies/watchlist - *incomplete*
 
 ### Data hyperlinking.
-
-.... Use screenshots to illustrate where data hyperlinking is present in your views - include captions.
 
 ![][cardLink]
 > Clicking a card causes the display of that movie's details.
@@ -59,15 +59,20 @@ N/A
 ![][reviewLink]
 >Clicking the 'Full Review' for a review extract will display the full text of the review
 
+![][tabLinks]
+>Clicking any one of the tabs will display a different page of movies etc.
+
 ## Independent learning (If relevant).
 
-. . . . . Briefly mention each technologies/techniques used in your project codebase that were not covered in the lectures/labs. Provide source code filename references to support your assertions and include reference material links (articles/blogs).
+https://developers.themoviedb.org/3/getting-started/introduction
 
 ---------------------------------
 
-[model]: ./data.jpg
-[movieDetail]: ./public/movieDetail.png
-[review]: ./public/review.png
-[reviewLink]: ./public/reviewLink.png
-[cardLink]: ./public/cardLink.png
+[tabLinks]: ./public/tablinks.jpg
+[reviewLink]: ./public/reviewlink.png
+[cardLink]: ./public/cardlink.jpg
+[nowplaying]: ./public/nowplaying.jpg
+[toprated]: ./public/toprated.jpg
+[upcoming]: ./public/upcoming.jpg
 [stories]: ./public/storybook.png
+[watchlist]: ./public/watchlist.jpg
