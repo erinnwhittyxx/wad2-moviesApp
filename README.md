@@ -31,8 +31,6 @@ N/A
 
 ### UI Design.
 
-...... Insert screenshots of the new/modified views you have added to the Movies Fan app. Include a caption for each one clearly stating its purpose and any user interaction it supports ........
-
 ![][upcoming]
 >Shows pages of upcoming movies.
 
@@ -68,11 +66,11 @@ https://developers.themoviedb.org/3/getting-started/introduction
 
 ---------------------------------
 
-[tabLinks]: ./public/tablinks.jpg
+[tabLinks]: ./public/tablinks.JPG
 [reviewLink]: ./public/reviewlink.png
-[cardLink]: ./public/cardlink.jpg
-[nowplaying]: ./public/nowplaying.jpg
-[toprated]: ./public/toprated.jpg
-[upcoming]: ./public/upcoming.jpg
+[cardLink]: ./public/cardlink.JPG
+[nowplaying]: ./public/nowplaying.JPG
+[toprated]: ./public/toprated.JPG
+[upcoming]: ./public/upcoming.JPG
 [stories]: ./public/storybook.png
-[watchlist]: ./public/watchlist.jpg
+[watchlist]: ./public/watchlist.JPG
